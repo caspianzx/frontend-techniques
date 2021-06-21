@@ -8,17 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>Draggable image</title>
+    <title>Drag and drop api</title>
 </head>
 <body class="container">
 <!-- Draggable DIV -->
-<div id="mydiv">
-    <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-    <div id="mydivheader">Click here to move</div>
-    <p>Move</p>
-    <p>this</p>
-    <p>DIV</p>
-</div>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" class="box"></div>
+
+<img id="drag1" src="slayer.jpeg" draggable="true" ondragstart="drag(event)" class="img">
+<img id="drag2" src="slayer.jpeg" draggable="true" ondragstart="drag(event)" class="img">
 <script src="index.js"></script>
 </body>
 </html>
